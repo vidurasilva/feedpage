@@ -556,7 +556,8 @@
                   "images/home/product5.jpg",
                   "images/home/product6.jpg",
                 ];
-                for (let index = 0; index < 4; index++) {
+
+                for (let index = 0; index < 6; index++) {
                   document.write(
                     "<div class='col-sm-4'> \
                   <div class='product-image-wrapper'> \
@@ -594,21 +595,23 @@
                   );
                 }
               </script>
+              <div id="content"></div>
 
-              <div class="pagination">
-                <div id="pagination-wrapper"></div>
-              </div>
-
-              <!-- <ul class="pagination" id="pagination-wrapper">
-                <li class="active"><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-                <li><a href="">6</a></li>
-                <li><a href="">7</a></li>
-                <li><a href="">&raquo;</a></li>
-              </ul> -->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination pg-blue justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" onclick="load_home(1)">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link">2</a></li>
+                  <li class="page-item"><a class="page-link">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link">Next</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
 
             <!--features_items-->
